@@ -107,4 +107,4 @@ jobs:
           cache-to: type=gha,mode=max
       - name: Test
         run: |
-          docker compose up -d
+          QUILIBRIUM_IMAGE_NAME=snowdreamtechtest/quilibrium docker compose up -d
