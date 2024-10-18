@@ -29,8 +29,8 @@ services:
       timeout: 5s
       retries: 3
       start_period: 15m
-    # volumes:
-    #   - ./node1/.config:/root/.config
+    volumes:
+      - ./node1/.config:/app/.config
     logging:
       driver: "json-file"
       options:
@@ -39,11 +39,11 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '1'
-          memory: '1G'
+          cpus: '3'
+          memory: '2.7G'
         reservations:
-          cpus: '0.5'
-          memory: '512M'
+          cpus: '2'
+          memory: '1.7G'
 
   node2:
     image: ${QUILIBRIUM_IMAGE_NAME:-quilibrium:latest}
@@ -70,8 +70,8 @@ services:
       timeout: 5s
       retries: 3
       start_period: 15m
-    # volumes:
-    #   - ./node2/.config:/root/.config
+    volumes:
+      - ./node2/.config:/app/.config
     logging:
       driver: "json-file"
       options:
@@ -80,8 +80,8 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '1'
-          memory: '1G'
+          cpus: '3'
+          memory: '2.7G'
         reservations:
-          cpus: '0.5'
-          memory: '512M'
+          cpus: '2'
+          memory: '1.7G'
