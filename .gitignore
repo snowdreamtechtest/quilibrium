@@ -1,6 +1,8 @@
 # Created by https://www.toptal.com/developers/gitignore/api/windows,linux,macos,jetbrains+all,vim,emacs,visualstudio,visualstudiocode,git,svn,mercurial
 # Edit at https://www.toptal.com/developers/gitignore?templates=windows,linux,macos,jetbrains+all,vim,emacs,visualstudio,visualstudiocode,git,svn,mercurial
 
+node*/.config/*
+
 ### Emacs ###
 # -*- mode: gitignore; -*-
 *~
